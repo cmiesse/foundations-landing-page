@@ -3,14 +3,22 @@
     --quote-bg-color: #E5E7EB;
 }
 
+*{
+    margin:0;
+    padding: 0;
+}
+
 html{
     font-family: roboto;
 }
 
 body{
     font-family: roboto;
-    margin:0;
-    padding: 0;
+}
+
+.container{
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
 header{
@@ -18,6 +26,7 @@ header{
 }
 
 .navigation{
+    padding-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,12 +42,22 @@ nav > ul {
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
+    margin: 0;
+    padding : 0;
 }
 
 nav > ul > li {
     list-style: none;
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.header-link{
+    text-decoration: none;
+}
+
+.header-link:hover{
+    text-decoration: underline;
 }
 
 .heroMainText{
@@ -52,37 +71,64 @@ nav > ul > li {
     color: #E5E7EB;
 }
 
+.headerSecondary{
+    margin-top: 5rem;
+    gap:3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.picturePlaceholder{
+    background-color: gray;
+    width: 100%;
+    aspect-ratio: 2/1;
+    min-width: 300px;
+    max-width: 600px;
+    display: grid;
+    place-items: center;
+}
+
 .infos{
-    margin: 0 auto;
-    text-align: center;
+    padding-block: 2rem;;
 }
 .infos-title{
     font-size:36px;
     font-weight: extra-bold;
-    color: #1F2937
+    color: #1F2937;
+    text-align: center;
 }
 
 .info-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+    padding-block: 2rem;
 }
 
 
 .info{
     display: flex;
     flex-direction: column;
-    width: 50px;
+    flex-basis: 1;
+    max-width: 200px;
+}
+
+.info-text{
+    text-align: center;
 }
 
 .blue-square{
-    height: 50px;;
-    width: 50px;
-    border: 1px solid #3882F6;
+    height: 100%;;
+    aspect-ratio: 1/1;;
+    border: 3px solid #3882F6;
+    border-radius: 5px;
 }
 
 .quote{
+    padding-block: 5rem;
     background-color: #E5E7EB;
 
 }
@@ -96,14 +142,43 @@ nav > ul > li {
 
 .quote-author{
     text-align: right;
+    font-size:24px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.cta{
+    padding-block: 5rem;
+}
+
+.ctaContainer{
+    color: #E5E7EB;
+    padding: 2rem 5rem;
+    background-color: #3882F6;
+}
+
+.ctaFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer{
     background-color: var(--dark-bg-color);
+    color: #E5E7EB;
+    text-align: center;
+    padding-block: 2rem;;
 }
 
 .button{
    background-color: #3882F6;
    border-radius: 5px;
-   border:none; 
+   border:none;
+   color: #E5E7EB;
+   padding: 0.25rem 2rem;
+   cursor: pointer;
+}
+
+.button-border-white{
+    border: 1px solid white!important;
 }

@@ -1,0 +1,109 @@
+:root{
+    --dark-bg-color: #1F2937;
+    --quote-bg-color: #E5E7EB;
+}
+
+html{
+    font-family: roboto;
+}
+
+body{
+    font-family: roboto;
+    margin:0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--dark-bg-color);
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerLogo{
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav > ul > li {
+    list-style: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.heroMainText{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color:#F9FAF8;
+}
+
+.heroSecondaryText, .header-link{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.infos{
+    margin: 0 auto;
+    text-align: center;
+}
+.infos-title{
+    font-size:36px;
+    font-weight: extra-bold;
+    color: #1F2937
+}
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+}
+
+.blue-square{
+    height: 50px;;
+    width: 50px;
+    border: 1px solid #3882F6;
+}
+
+.quote{
+    background-color: #E5E7EB;
+
+}
+
+.quote-text{
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author{
+    text-align: right;
+}
+
+footer{
+    background-color: var(--dark-bg-color);
+}
+
+.button{
+   background-color: #3882F6;
+   border-radius: 5px;
+   border:none; 
+}
